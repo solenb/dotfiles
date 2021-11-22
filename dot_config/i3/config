@@ -19,7 +19,7 @@ exec_always --no-startup-id picom
 exec_always --no-startup-id redshift -x && redshift -O 4000k
 exec_always --no-startup-id flameshot
 exec_always --no-startup-id dunst
-exec_always --no-startup-id feh --bg-fill -r -z ~/Pictures/Wallpapers
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpapers/1.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Apps
@@ -77,7 +77,7 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 
 #Others
 bindsym $mod+Shift+r restart
-bindsym $mod+Shift+l exec sh $HOME/.local/bin/lock
+bindsym $mod+Shift+l exec betterlockscreen -l  
 bindsym $mod+Shift+e exit
 
 #Rules
